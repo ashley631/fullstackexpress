@@ -2,6 +2,11 @@
 
 const shoppingList = {
     template: `
+    <button ng-click="$ctrl.getAllItems();">Get Items</button>
+    <ul>
+        <li ng-repeat="obj in $ctrl.">{{ obj.text }}</li>
+    </ul>
+    
 
 
     `,
@@ -13,6 +18,11 @@ const shoppingList = {
                 vm.cart = response.data;
             });
         };
+        vm.deleteItems = () => {
+            CartService.deleteItems().then((response) => {
+                
+            })
+        }
     }]
 };
 
