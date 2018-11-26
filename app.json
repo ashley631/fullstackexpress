@@ -1,0 +1,5 @@
+{
+    "name": "ashley-shopping-list",
+    "description": "this is a description",
+    "image": "heroku/nodejs"
+}
